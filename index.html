@@ -16,24 +16,11 @@
       crossorigin="anonymous"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.17/marked.min.js"></script>
+    <script src="./index.js"></script>
 
     <title>Markdown Editor</title>
   </head>
-  <body>
-    <script>
-      function updatePreview() {
-        let previewElement = document.getElementById("preview");
-        let editorValue = document.getElementById("editor").value;
-        previewElement.innerHTML = marked.parse(editorValue);
-      }
-
-      function setDefault() {
-        console.log("Inside setDefault");
-      }
-
-      document.onload = setDefault();
-    </script>
-
+  <body onload="setDefault()">
     <div class="container-fluid">
       <div class="row">
         <div class="col text-center text-white bg-danger">
