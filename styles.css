@@ -1,0 +1,85 @@
+html,
+body {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ddd;
+  margin: 0px;
+  min-width: 500px;
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+}
+
+.title-container {
+  background-color: #45443c;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: #e1b41f;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+}
+
+.left-col,
+.right-col {
+  flex-grow: 1;
+}
+
+#editor-title,
+#preview-title {
+  color: #e1b41f;
+}
+
+#editor,
+#preview {
+  width: 100%;
+  height: 100%;
+  background-color: #1e1916;
+  border: 0px none;
+  color: #fff;
+  overflow: auto;
+  white-space: pre;
+  display: block;
+  float: left;
+  margin: 0px;
+  word-wrap: normal;
+}
+
+fieldset {
+  border: 0px none;
+  width: 100%;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+legend {
+  background-color: #e1b41f;
+  color: black;
+  padding: 7px 15px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+#right > fieldset > div {
+  padding: 8px;
+}
+
+fieldset > div {
+  background-color: #1e1916;
+  color: #eee;
+}
